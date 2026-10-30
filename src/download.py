@@ -10,15 +10,32 @@ Usage:  python src/download.py          (skips the download if files exist)
 """
 import argparse
 import io
+import time
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
+from urllib.request import Request, urlopen
 
 URL = "https://www150.statcan.gc.ca/n1/tbl/csv/18100245-eng.zip"
 RAW_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
 FILES = ("18100245.csv", "18100245_MetaData.csv")
+
+
+def fetch(url: str, attempts: int = 6) -> bytes:
+    """GET with simple retries (the StatCan server sometimes drops TLS handshakes)."""
+    req = Request(url, headers={"User-Agent": "canada-food-prices-tracker/1.0"})
+    for i in range(1, attempts + 1):
+        try:
+            with urlopen(req, timeout=120) as resp:
+                return resp.read()
+        except OSError as err:  # URLError, SSL errors, timeouts
+            if i == attempts:
+                raise
+            wait = 5 * i
+            print(f"  attempt {i} failed ({err}); retrying in {wait}s")
+            time.sleep(wait)
+    raise RuntimeError("unreachable")
 
 
 def main(force: bool = False) -> None:
@@ -27,9 +44,10 @@ def main(force: bool = False) -> None:
         print(f"Raw files already in {RAW_DIR} (use --force to refresh).")
         return
     print(f"Downloading {URL} ...")
-    resp = requests.get(URL, timeout=120)
-    resp.raise_for_status()
-    with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
+    # Standard library only (no extra dependency). A User-Agent is sent
+    # because some government servers reject anonymous clients.
+    content = fetch(URL)
+    with zipfile.ZipFile(io.BytesIO(content)) as zf:
         for name in FILES:
             zf.extract(name, RAW_DIR)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
