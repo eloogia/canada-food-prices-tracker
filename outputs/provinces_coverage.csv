@@ -1,0 +1,14 @@
+geo,items_full_2021,items_full_2025-09_2026-08,kept,reason_excluded
+Canada,20,20,True,
+Newfoundland and Labrador,19,19,False,"missing: Milk, 4 litres"
+Prince Edward Island,20,20,True,
+Nova Scotia,20,20,True,
+New Brunswick,20,20,True,
+Quebec,20,20,True,
+Ontario,20,20,True,
+Manitoba,20,20,True,
+Saskatchewan,20,20,True,
+Alberta,20,20,True,
+British Columbia,20,20,True,
+"Whitehorse, Yukon",0,12,False,no 2021 data (series start 2025-09)
+"Yellowknife, Northwest Territories",0,6,False,no 2021 data (series start 2025-09)
