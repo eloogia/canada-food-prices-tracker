@@ -102,5 +102,5 @@ Neighbouring provinces (Prairies, Maritimes) track each other much more closely 
 
 ## 8. Revisions and comparability
 
-- Data are subject to revision (note 1). This run used the file downloaded at **2026-10-30T01:48:06Z** (UTC); re-running `src/download.py --force` may change recent months slightly.
+- Data are subject to revision (note 1). This run used the file downloaded at **2026-10-30T01:52:27Z** (UTC); re-running `src/download.py --force` may change recent months slightly.
 - StatCan advises caution when comparing **across provinces** (brand/quality mix differs) and recommends the **CPI** for pure price change. This project therefore talks about *average prices paid*, not inflation in the CPI sense.
