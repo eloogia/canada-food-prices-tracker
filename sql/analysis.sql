@@ -2,6 +2,9 @@
 -- Table `prices` is loaded from data/processed/staples_prices.csv by src/run_sql.py:
 --   ref_date TEXT 'YYYY-MM-01', geo TEXT, product TEXT (exact StatCan name),
 --   item TEXT (short label), category TEXT, price_cad REAL
+-- Table `prov_prices` is loaded from data/processed/provinces_prices.csv (src/provinces.py):
+--   same columns (no category), Jan 2021 onward, Canada + the provinces that have all
+--   20 staples in 2021 and the latest 12 months (see outputs/provinces_coverage.csv).
 -- Each block starting with "-- name:" is run and saved to outputs/sql/<name>.csv.
 -- Blocks named "setup_*" create views and produce no output file.
 --
@@ -172,3 +175,40 @@ FROM v_yoy
 WHERE geo = 'Canada'
 GROUP BY item
 ORDER BY y2022 DESC;
+
+-- name: q10_provinces_basket
+-- Provincial comparison of the same 20-staple basket, latest 12 months.
+--   basket_cost_cad   = sum of the 20 items' latest-12-month average prices
+--                       (one unit of each item: not a household grocery bill)
+--   cost_vs_canada_pct = basket cost relative to Canada's
+--   change_vs_2021_pct = equal-weight basket index (mean of item ratios
+--                        latest-12-month avg / 2021 avg) minus 100. Same method as q07:
+--                        averaging the monthly index over 12 months gives exactly this.
+WITH win AS (
+    SELECT MAX(ref_date) AS latest, date(MAX(ref_date), '-11 months') AS window_start
+    FROM prov_prices
+), item AS (
+    SELECT p.geo, p.product,
+           AVG(CASE WHEN p.ref_date BETWEEN '2021-01-01' AND '2021-12-01' THEN p.price_cad END) AS avg_2021,
+           AVG(CASE WHEN p.ref_date BETWEEN w.window_start AND w.latest THEN p.price_cad END) AS avg_last12
+    FROM prov_prices p, win w
+    GROUP BY p.geo, p.product
+), geo AS (
+    SELECT geo, COUNT(*) AS n_items,
+           SUM(avg_last12) AS cost,
+           100.0 * AVG(avg_last12 / avg_2021) - 100 AS chg
+    FROM item
+    GROUP BY geo
+    HAVING COUNT(avg_2021) = 20 AND COUNT(avg_last12) = 20
+)
+SELECT g.geo, g.n_items,
+       ROUND(g.cost, 2) AS basket_cost_cad,
+       ROUND(100.0 * (g.cost / c.cost - 1), 1) AS cost_vs_canada_pct,
+       ROUND(g.chg, 1) AS change_vs_2021_pct,
+       RANK() OVER (ORDER BY g.chg) AS rank_change_low_to_high,
+       RANK() OVER (ORDER BY g.cost) AS rank_cost_low_to_high,
+       (SELECT window_start FROM win) AS from_month,
+       (SELECT latest FROM win) AS to_month
+FROM geo g
+JOIN geo c ON c.geo = 'Canada'
+ORDER BY g.chg;
