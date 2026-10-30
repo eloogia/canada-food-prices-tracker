@@ -40,6 +40,7 @@ def read_metadata(path: Path = META):
 
 
 def main() -> None:
+    OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     raw = load_raw(RAW)
     raw_names = pd.read_csv(RAW, dtype=str, usecols=["Products"], encoding="utf-8-sig")["Products"]
     product_notes, notes = read_metadata()
@@ -166,7 +167,6 @@ def main() -> None:
     add("- StatCan advises caution when comparing **across provinces** (brand/quality mix differs) and recommends the "
         "**CPI** for pure price change. This project therefore talks about *average prices paid*, not inflation in the CPI sense.")
 
-    OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text("\n".join(L) + "\n")
     print(f"Wrote {OUT_MD.relative_to(ROOT)} and {OUT_MOVES.relative_to(ROOT)}")
 

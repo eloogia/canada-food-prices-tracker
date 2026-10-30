@@ -82,6 +82,7 @@ def item_lines_chart() -> None:
 
 
 def main() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
     basket_chart()
     top_increases_chart()
     item_lines_chart()
