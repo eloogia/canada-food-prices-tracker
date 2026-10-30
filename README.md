@@ -11,13 +11,14 @@ This project answers that with Statistics Canada's monthly average retail prices
 2. Which staples rose the most and the least?
 3. Is the latest year-over-year change still high?
 4. How do Quebec price levels compare with the national average?
+5. How do the provinces compare, both in how much the basket rose and in what it costs now?
 
 ## 2. Data
 
 - **Statistics Canada, Table 18-10-0245-01, *Monthly average retail prices for selected products*** ([table page](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501), DOI [10.25318/1810024501-eng](https://doi.org/10.25318/1810024501-eng)).
   Full-table CSV: `https://www150.statcan.gc.ca/n1/tbl/csv/18100245-eng.zip`, downloaded by `src/download.py`.
 - Monthly, January 2017 to **August 2026** (latest month in the run used here), 110 products, Canada + 10 provinces + Whitehorse and Yellowknife. Prices are averages computed by StatCan from grocery retailers' **scanner (transaction) data**, taxes excluded ([methodology](https://www150.statcan.gc.ca/n1/pub/62f0014m/62f0014m2022007-eng.htm)).
-- Subset used: **20 staples × 5 geographies** (Canada, Quebec, Ontario, Alberta, Saskatchewan), January 2020 to August 2026 → `data/processed/staples_prices.csv` (8,000 rows, ~0.7 MB). The raw file (19 MB) is not committed; run the download script.
+- Subset used: **20 staples × 5 geographies** (Canada, Quebec, Ontario, Alberta, Saskatchewan), January 2020 to August 2026 → `data/processed/staples_prices.csv` (8,000 rows, ~0.7 MB). For the provincial comparison, the same 20 staples for Canada + 9 provinces, January 2021 to August 2026 → `data/processed/provinces_prices.csv` (13,600 rows, ~1 MB). The raw file (19 MB) is not committed; run the download script.
 
 | Category | Products (exact StatCan names) |
 |---|---|
@@ -33,13 +34,15 @@ This project answers that with Statistics Canada's monthly average retail prices
 
 1. **Download** (`src/download.py`): fetches the full-table zip (standard library only, with retries).
 2. **Clean** (`src/clean.py`): strips stray spaces in product names, converts prices to numbers, keeps the 20 staples and 5 geographies, and **asserts** the integrity rules: all products found, one unit (dollars), no duplicate months, no gaps.
-3. **Data quality** (`src/data_quality.py` → [`outputs/data_quality.md`](outputs/data_quality.md)): see section 5.
-4. **SQL** (`src/run_sql.py` loads the CSV into SQLite and runs [`sql/analysis.sql`](sql/analysis.sql); every result is saved to `outputs/sql/`):
+3. **Provinces** (`src/provinces.py`): same 20 staples for every geography in the table; keeps only those with all 20 items priced in every month of 2021 and of the latest 12 months, and writes the coverage check to `outputs/provinces_coverage.csv`.
+4. **Data quality** (`src/data_quality.py` → [`outputs/data_quality.md`](outputs/data_quality.md)): see section 5.
+5. **SQL** (`src/run_sql.py` loads both CSVs into SQLite and runs [`sql/analysis.sql`](sql/analysis.sql); every result is saved to `outputs/sql/`):
    - year-over-year % change (self-join on the same month a year earlier);
    - cumulative change, **two ways**: January 2021 → latest month (point-to-point) and **2021 average → latest-12-month average** (used for rankings, because single months are noisy);
    - most / least inflationary items (window `RANK()`);
-   - an **equal-weight basket index** (2021 average = 100): for each month, the mean of each item's price divided by its 2021 average price, plus a 12-month moving average.
-5. **Charts** (`src/charts.py`, matplotlib) and **R** (`r/quebec_vs_canada.R`): R recomputes the basket index independently and checks it matches SQL (max difference 0.0000 over 340 month–geography pairs), then draws a ggplot2 chart.
+   - an **equal-weight basket index** (2021 average = 100): for each month, the mean of each item's price divided by its 2021 average price, plus a 12-month moving average;
+   - a **provincial comparison** (`q10`): basket cost, cost vs Canada, and basket change since 2021 per province.
+6. **Charts** (`src/charts.py`, matplotlib) and **R** (`r/quebec_vs_canada.R`): R recomputes the basket index independently and checks it matches SQL (max difference 0.0000 over 340 month–geography pairs), then draws a ggplot2 chart.
 
 The basket is **not the CPI**: each item counts equally regardless of household spending, and the underlying averages are not quality-adjusted (see limitations).
 
@@ -62,6 +65,32 @@ How you measure matters: canola oil is up **58%** point-to-point (January 2021 �
 
 ![Quebec vs Canada per item (R / ggplot2)](outputs/r_quebec_vs_canada_dumbbell.png)
 
+### Provincial comparison
+
+The same 20-staple basket for Canada and every province (`src/provinces.py` → `data/processed/provinces_prices.csv`, query `q10_provinces_basket`). **Basket change** uses the same equal-weight index as above (mean of item ratios, latest-12-month average ÷ 2021 average). **Basket cost** is the sum of the 20 items' latest-12-month average prices: one unit of each item, not a household grocery bill.
+
+| Rank (rise, low → high) | Geography | Basket change vs 2021 | Basket cost (latest 12 months) | Cost vs Canada | Rank (cost, low → high) |
+|---:|---|---:|---:|---:|---:|
+| 1 | Quebec | +19.3% | $139.81 | +0.5% | 3 |
+| 2 | **Canada** | +22.1% | $139.10 | — | 2 |
+| 3 | Ontario | +23.3% | $135.31 | −2.7% | 1 |
+| 4 | British Columbia | +24.2% | $151.56 | +9.0% | 10 |
+| 5 | New Brunswick | +24.8% | $148.17 | +6.5% | 6 |
+| 6 | Alberta | +24.9% | $149.57 | +7.5% | 9 |
+| 7 | Nova Scotia | +25.4% | $149.08 | +7.2% | 7 |
+| 8 | Prince Edward Island | +25.4% | $149.53 | +7.5% | 8 |
+| 9 | Saskatchewan | +26.3% | $144.12 | +3.6% | 4 |
+| 10 | Manitoba | +27.3% | $144.59 | +4.0% | 5 |
+
+![Provincial basket comparison](outputs/provinces_basket.png)
+
+- **Quebec had the smallest rise (+19.3%) and Manitoba the largest (+27.3%)**; Canada as a whole is +22.1%. Quebec is the only province below the national rise.
+- **Rising least ≠ cheapest.** Ontario is the cheapest basket ($135.31, −2.7% vs Canada) even though it rose more than Quebec ($139.81, about the national level). British Columbia is the most expensive ($151.56, +9.0%) but sits mid-table on the rise; Manitoba rose the most yet is cheaper than BC, Alberta and the Maritimes. The Maritimes and Alberta cluster at 6–8% above the Canadian cost.
+- **Exclusions** (completeness rule: all 20 items priced in all 12 months of 2021 *and* of the latest 12 months; see [`outputs/provinces_coverage.csv`](outputs/provinces_coverage.csv)):
+  - **Newfoundland and Labrador**: StatCan publishes no `Milk, 4 litres` series for it (only 1 L and 2 L; 19 of 20 items), so its basket would not be comparable.
+  - **Whitehorse and Yellowknife** (territories): series only start in September 2025, so there is no 2021 base (and Yellowknife has suppressed values).
+- Level comparisons between provinces carry StatCan's caution that brand and size mixes differ by region (see limitations).
+
 ## 5. Data quality
 
 Full generated report: [`outputs/data_quality.md`](outputs/data_quality.md). In short:
@@ -81,25 +110,25 @@ Full generated report: [`outputs/data_quality.md`](outputs/data_quality.md). In 
 - The basket is **equal-weight** and only 20 items: coffee counts as much as milk. It is a summary of these staples, not of a household grocery bill.
 - Cross-province level comparisons carry StatCan's caution: brand and quality mixes differ by region.
 - January 2024 sample change (more retailers) affects the 2024 year-over-year comparisons.
-- Only 5 geographies were analysed; the territories were excluded (data only from September 2025, some values suppressed).
+- The detailed analysis covers 5 geographies; the provincial comparison covers Canada + 9 provinces. Newfoundland and Labrador (no 4 L milk series) and the territories (data only from September 2025, some values suppressed) are excluded.
 
 ## 7. How to run
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-./run_all.sh        # download -> clean -> data quality -> SQL -> charts -> R (if installed)
+./run_all.sh        # download -> clean -> provinces -> data quality -> SQL -> charts -> R (if installed)
 ```
 
-Or step by step: `python src/download.py`, `python src/clean.py`, `python src/data_quality.py`, `python src/run_sql.py`, `python src/charts.py`, `Rscript r/quebec_vs_canada.R` (needs R ≥ 4.1 with `readr`, `dplyr`, `ggplot2`). Python 3.10+.
+Or step by step: `python src/download.py`, `python src/clean.py`, `python src/provinces.py`, `python src/data_quality.py`, `python src/run_sql.py`, `python src/charts.py`, `Rscript r/quebec_vs_canada.R` (needs R ≥ 4.1 with `readr`, `dplyr`, `ggplot2`). Python 3.10+.
 
 ```
-├── src/            download.py · clean.py · data_quality.py · run_sql.py · charts.py
+├── src/            download.py · clean.py · provinces.py · data_quality.py · run_sql.py · charts.py
 ├── sql/            analysis.sql
 ├── r/              quebec_vs_canada.R
 ├── data/raw/       (git-ignored; created by download.py)
-├── data/processed/ staples_prices.csv
-└── outputs/        charts (.png), data_quality.md, sql/*.csv
+├── data/processed/ staples_prices.csv · provinces_prices.csv
+└── outputs/        charts (.png), data_quality.md, provinces_coverage.csv, sql/*.csv
 ```
 
 ---
