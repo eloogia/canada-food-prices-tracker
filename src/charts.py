@@ -81,12 +81,51 @@ def item_lines_chart() -> None:
     plt.close(fig)
 
 
+def provinces_chart() -> None:
+    d = pd.read_csv(SQL_OUT / "q10_provinces_basket.csv").sort_values("change_vs_2021_pct")
+    period = f"{pd.Timestamp(d.from_month.iloc[0]):%b %Y}–{pd.Timestamp(d.to_month.iloc[0]):%b %Y}"
+    canada_cost = d.loc[d.geo == "Canada", "basket_cost_cad"].iloc[0]
+    canada_chg = d.loc[d.geo == "Canada", "change_vs_2021_pct"].iloc[0]
+    colors = ["#c0392b" if g == "Canada" else "#7f9fc4" for g in d.geo]
+    y = range(len(d))
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 5), sharey=True,
+                                 gridspec_kw={"width_ratios": [1.15, 1]})
+    a1.barh(y, d.change_vs_2021_pct, color=colors)
+    a1.axvline(canada_chg, color="#c0392b", lw=0.8, ls="--")
+    for i, v in enumerate(d.change_vs_2021_pct):
+        a1.text(v + 0.3, i, f"+{v:.1f}%", va="center", fontsize=8)
+    a1.set_yticks(list(y), d.geo)
+    for lbl in a1.get_yticklabels():
+        if lbl.get_text() == "Canada":
+            lbl.set_fontweight("bold")
+    a1.set_xlim(0, d.change_vs_2021_pct.max() * 1.15)
+    a1.set_xlabel("Basket index change vs 2021 average (%)")
+    a1.set_title("How much it rose since 2021", loc="left", fontweight="bold", fontsize=10)
+    a2.barh(y, d.basket_cost_cad, color=colors)
+    a2.axvline(canada_cost, color="#c0392b", lw=0.8, ls="--")
+    for i, (g, v, pct) in enumerate(zip(d.geo, d.basket_cost_cad, d.cost_vs_canada_pct)):
+        label = f"${v:.2f}" if g == "Canada" else f"${v:.2f} ({pct:+.1f}%)"
+        a2.text(v + 1, i, label, va="center", fontsize=8)
+    a2.set_xlim(0, d.basket_cost_cad.max() * 1.3)
+    a2.set_xlabel("Basket cost, one of each of the 20 items ($), vs Canada")
+    a2.set_title("What it costs now", loc="left", fontweight="bold", fontsize=10)
+    fig.suptitle(f"20-staple basket by province, latest 12 months ({period}). Canada in red",
+                 x=0.01, ha="left", fontweight="bold")
+    fig.text(0.01, 0.01, SOURCE + "\nExcluded: Newfoundland and Labrador (no 4 L milk series) and the territories"
+             " (data only from Sep 2025).", fontsize=7, color="#555")
+    fig.tight_layout(rect=(0, 0.05, 1, 0.96))
+    fig.savefig(OUT / "provinces_basket.png")
+    plt.close(fig)
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     basket_chart()
     top_increases_chart()
     item_lines_chart()
-    print("Charts written to outputs/: basket_index_quebec_vs_canada.png, top10_increases.png, item_lines.png")
+    provinces_chart()
+    print("Charts written to outputs/: basket_index_quebec_vs_canada.png, top10_increases.png, "
+          "item_lines.png, provinces_basket.png")
 
 
 if __name__ == "__main__":
