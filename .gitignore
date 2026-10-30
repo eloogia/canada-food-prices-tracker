@@ -1,0 +1,8 @@
+# raw StatCan download (~19 MB unzipped) – reproduce with: python src/download.py
+data/raw/
+# SQLite database is rebuilt by src/run_sql.py
+data/*.sqlite
+__pycache__/
+.venv/
+.Rhistory
+.DS_Store
