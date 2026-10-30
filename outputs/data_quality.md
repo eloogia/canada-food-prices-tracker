@@ -98,7 +98,7 @@ Median absolute gap between two geographies' average prices for the same staple 
 | Ontario vs Alberta | 8.42 | 8% |
 | Quebec vs Canada | 6.19 | 10% |
 
-Neighbouring provinces served by the same grocery chains (Prairies, Maritimes) track each other much more closely than Quebec vs Ontario. The table cannot say why (regional pricing zones are a plausible reason). Practical consequence: Alberta and Saskatchewan are **not two independent data points**, so agreement between them is not treated as extra evidence.
+Neighbouring provinces (Prairies, Maritimes) track each other much more closely than Quebec vs Ontario. The table cannot say why (shared regional pricing by grocery chains is one plausible reason, not verified here). Practical consequence: Alberta and Saskatchewan are **not two independent data points**, so agreement between them is not treated as extra evidence.
 
 ## 8. Revisions and comparability
 

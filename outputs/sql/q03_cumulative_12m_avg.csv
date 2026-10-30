@@ -1,0 +1,101 @@
+geo,item,category,avg_2021,avg_last12,change_pct
+Alberta,Coffee (340 g),Pantry,5.37,9.22,71.9
+Alberta,Ground beef (kg),Meat,10.16,17.0,67.4
+Alberta,Pasta (500 g),Bakery & grains,2.54,3.6,41.4
+Alberta,Canola oil (3 L),Pantry,7.95,10.44,31.3
+Alberta,Whole chicken (kg),Meat,6.83,8.71,27.5
+Alberta,Eggs (12),Dairy & eggs,4.02,5.12,27.4
+Alberta,Milk (4 L),Dairy & eggs,5.07,6.43,26.8
+Alberta,White sugar (2 kg),Pantry,2.56,3.17,23.8
+Alberta,White bread (675 g),Bakery & grains,2.96,3.6,21.7
+Alberta,Apples (kg),Produce,4.91,5.96,21.3
+Alberta,Chicken breasts (kg),Meat,14.16,17.17,21.2
+Alberta,Butter (454 g),Dairy & eggs,4.98,5.98,20.1
+Alberta,Carrots (1.36 kg),Produce,3.89,4.66,19.8
+Alberta,Potatoes (4.54 kg),Produce,6.32,7.55,19.5
+Alberta,Bacon (500 g),Meat,6.74,7.56,12.2
+Alberta,Bananas (kg),Produce,1.73,1.94,12.1
+Alberta,Block cheese (500 g),Dairy & eggs,6.43,7.21,12.1
+Alberta,Wheat flour (2.5 kg),Bakery & grains,4.84,5.34,10.2
+Alberta,White rice (2 kg),Bakery & grains,8.3,8.92,7.5
+Alberta,Pork loin (kg),Meat,9.79,9.99,2.0
+Canada,Coffee (340 g),Pantry,5.48,9.38,71.1
+Canada,Ground beef (kg),Meat,9.71,15.91,63.9
+Canada,White sugar (2 kg),Pantry,2.21,2.88,30.2
+Canada,Pasta (500 g),Bakery & grains,2.6,3.35,28.8
+Canada,Whole chicken (kg),Meat,5.82,7.42,27.6
+Canada,Milk (4 L),Dairy & eggs,5.5,6.92,25.9
+Canada,Canola oil (3 L),Pantry,8.55,10.41,21.7
+Canada,Butter (454 g),Dairy & eggs,4.75,5.74,20.7
+Canada,Eggs (12),Dairy & eggs,4.0,4.81,20.2
+Canada,White bread (675 g),Bakery & grains,3.01,3.58,19.1
+Canada,Carrots (1.36 kg),Produce,3.24,3.85,18.9
+Canada,Apples (kg),Produce,4.8,5.6,16.7
+Canada,Chicken breasts (kg),Meat,12.84,14.6,13.7
+Canada,White rice (2 kg),Bakery & grains,8.4,9.55,13.7
+Canada,Block cheese (500 g),Dairy & eggs,6.21,6.96,12.1
+Canada,Bananas (kg),Produce,1.62,1.79,10.5
+Canada,Wheat flour (2.5 kg),Bakery & grains,4.77,5.21,9.1
+Canada,Bacon (500 g),Meat,6.62,7.16,8.3
+Canada,Potatoes (4.54 kg),Produce,4.48,4.73,5.6
+Canada,Pork loin (kg),Meat,8.8,9.23,4.9
+Ontario,Ground beef (kg),Meat,9.14,15.77,72.5
+Ontario,Coffee (340 g),Pantry,5.42,9.28,71.1
+Ontario,White sugar (2 kg),Pantry,2.02,2.9,43.5
+Ontario,Milk (4 L),Dairy & eggs,5.14,6.82,32.6
+Ontario,Whole chicken (kg),Meat,5.96,7.72,29.6
+Ontario,Carrots (1.36 kg),Produce,2.93,3.77,28.9
+Ontario,Eggs (12),Dairy & eggs,3.96,4.96,25.4
+Ontario,Pasta (500 g),Bakery & grains,2.63,3.29,25.2
+Ontario,White bread (675 g),Bakery & grains,2.6,3.2,23.2
+Ontario,Butter (454 g),Dairy & eggs,4.75,5.71,20.2
+Ontario,Apples (kg),Produce,4.6,5.42,17.7
+Ontario,Canola oil (3 L),Pantry,8.77,10.31,17.6
+Ontario,Bananas (kg),Produce,1.42,1.62,13.9
+Ontario,White rice (2 kg),Bakery & grains,7.99,9.1,13.9
+Ontario,Block cheese (500 g),Dairy & eggs,6.25,6.88,10.2
+Ontario,Chicken breasts (kg),Meat,12.83,13.95,8.7
+Ontario,Wheat flour (2.5 kg),Bakery & grains,4.77,5.15,8.0
+Ontario,Potatoes (4.54 kg),Produce,4.03,4.23,4.9
+Ontario,Bacon (500 g),Meat,6.64,6.7,0.9
+Ontario,Pork loin (kg),Meat,8.68,8.52,-1.9
+Quebec,Coffee (340 g),Pantry,5.39,9.58,77.7
+Quebec,Ground beef (kg),Meat,10.33,15.6,51.0
+Quebec,Whole chicken (kg),Meat,5.2,7.27,39.7
+Quebec,Pasta (500 g),Bakery & grains,2.58,3.21,24.2
+Quebec,White rice (2 kg),Bakery & grains,8.78,10.81,23.0
+Quebec,Butter (454 g),Dairy & eggs,4.61,5.58,21.0
+Quebec,Milk (4 L),Dairy & eggs,7.14,8.41,17.9
+Quebec,White bread (675 g),Bakery & grains,3.43,3.96,15.2
+Quebec,Block cheese (500 g),Dairy & eggs,5.96,6.85,15.0
+Quebec,Chicken breasts (kg),Meat,12.2,14.0,14.7
+Quebec,Bacon (500 g),Meat,6.74,7.65,13.5
+Quebec,Eggs (12),Dairy & eggs,3.71,4.18,12.7
+Quebec,Canola oil (3 L),Pantry,9.35,10.53,12.6
+Quebec,White sugar (2 kg),Pantry,2.44,2.74,12.4
+Quebec,Apples (kg),Produce,4.98,5.53,11.0
+Quebec,Bananas (kg),Produce,1.75,1.88,7.5
+Quebec,Wheat flour (2.5 kg),Bakery & grains,4.76,5.08,6.8
+Quebec,Pork loin (kg),Meat,9.1,9.55,5.0
+Quebec,Carrots (1.36 kg),Produce,3.18,3.29,3.6
+Quebec,Potatoes (4.54 kg),Produce,4.1,4.12,0.4
+Saskatchewan,Coffee (340 g),Pantry,4.8,8.7,81.3
+Saskatchewan,Ground beef (kg),Meat,9.46,16.1,70.2
+Saskatchewan,Pasta (500 g),Bakery & grains,2.49,3.53,41.6
+Saskatchewan,Canola oil (3 L),Pantry,7.67,10.01,30.6
+Saskatchewan,Whole chicken (kg),Meat,6.29,8.19,30.2
+Saskatchewan,White bread (675 g),Bakery & grains,2.87,3.59,25.1
+Saskatchewan,Eggs (12),Dairy & eggs,3.78,4.71,24.5
+Saskatchewan,Milk (4 L),Dairy & eggs,5.07,6.3,24.2
+Saskatchewan,Apples (kg),Produce,4.79,5.92,23.6
+Saskatchewan,Chicken breasts (kg),Meat,13.49,16.67,23.5
+Saskatchewan,White sugar (2 kg),Pantry,2.59,3.14,21.0
+Saskatchewan,Bacon (500 g),Meat,6.11,7.37,20.6
+Saskatchewan,Butter (454 g),Dairy & eggs,4.86,5.83,20.0
+Saskatchewan,Potatoes (4.54 kg),Produce,6.28,7.53,19.9
+Saskatchewan,Carrots (1.36 kg),Produce,3.9,4.48,14.9
+Saskatchewan,Block cheese (500 g),Dairy & eggs,6.25,7.04,12.7
+Saskatchewan,Bananas (kg),Produce,1.73,1.92,11.0
+Saskatchewan,Wheat flour (2.5 kg),Bakery & grains,4.66,5.14,10.3
+Saskatchewan,White rice (2 kg),Bakery & grains,7.74,8.52,10.1
+Saskatchewan,Pork loin (kg),Meat,8.58,9.44,10.0

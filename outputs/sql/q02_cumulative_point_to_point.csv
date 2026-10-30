@@ -1,0 +1,101 @@
+geo,item,price_jan2021,price_latest,latest_month,change_pct
+Alberta,Ground beef (kg),9.96,18.19,2026-08-01,82.6
+Alberta,Canola oil (3 L),6.2,10.83,2026-08-01,74.7
+Alberta,Coffee (340 g),5.35,9.21,2026-08-01,72.1
+Alberta,Whole chicken (kg),6.38,9.87,2026-08-01,54.7
+Alberta,Pasta (500 g),2.51,3.57,2026-08-01,42.2
+Alberta,Milk (4 L),4.94,6.61,2026-08-01,33.8
+Alberta,Eggs (12),3.94,5.19,2026-08-01,31.7
+Alberta,Potatoes (4.54 kg),5.84,7.68,2026-08-01,31.5
+Alberta,Apples (kg),5.16,6.74,2026-08-01,30.6
+Alberta,Carrots (1.36 kg),4.07,5.01,2026-08-01,23.1
+Alberta,White bread (675 g),2.96,3.61,2026-08-01,22.0
+Alberta,Butter (454 g),4.8,5.83,2026-08-01,21.5
+Alberta,Bananas (kg),1.75,2.08,2026-08-01,18.9
+Alberta,Block cheese (500 g),6.35,7.35,2026-08-01,15.7
+Alberta,Wheat flour (2.5 kg),4.8,5.53,2026-08-01,15.2
+Alberta,Chicken breasts (kg),13.82,15.55,2026-08-01,12.5
+Alberta,White sugar (2 kg),2.81,3.03,2026-08-01,7.8
+Alberta,White rice (2 kg),8.53,9.06,2026-08-01,6.2
+Alberta,Pork loin (kg),9.24,9.58,2026-08-01,3.7
+Alberta,Bacon (500 g),6.37,6.25,2026-08-01,-1.9
+Canada,Ground beef (kg),9.45,16.75,2026-08-01,77.2
+Canada,Coffee (340 g),5.48,9.46,2026-08-01,72.6
+Canada,Canola oil (3 L),6.9,10.92,2026-08-01,58.3
+Canada,Whole chicken (kg),5.19,7.13,2026-08-01,37.4
+Canada,Apples (kg),4.76,6.47,2026-08-01,35.9
+Canada,Pasta (500 g),2.5,3.37,2026-08-01,34.8
+Canada,White sugar (2 kg),2.13,2.78,2026-08-01,30.5
+Canada,Milk (4 L),5.36,6.99,2026-08-01,30.4
+Canada,Butter (454 g),4.41,5.68,2026-08-01,28.8
+Canada,Eggs (12),3.86,4.83,2026-08-01,25.1
+Canada,White bread (675 g),2.97,3.63,2026-08-01,22.2
+Canada,Carrots (1.36 kg),3.19,3.89,2026-08-01,21.9
+Canada,Chicken breasts (kg),12.0,14.41,2026-08-01,20.1
+Canada,Bananas (kg),1.63,1.89,2026-08-01,16.0
+Canada,Block cheese (500 g),6.17,7.05,2026-08-01,14.3
+Canada,White rice (2 kg),8.52,9.73,2026-08-01,14.2
+Canada,Wheat flour (2.5 kg),4.79,5.38,2026-08-01,12.3
+Canada,Bacon (500 g),6.01,6.58,2026-08-01,9.5
+Canada,Potatoes (4.54 kg),4.47,4.87,2026-08-01,8.9
+Canada,Pork loin (kg),8.97,9.21,2026-08-01,2.7
+Ontario,Ground beef (kg),9.21,16.09,2026-08-01,74.7
+Ontario,Coffee (340 g),5.51,9.38,2026-08-01,70.2
+Ontario,White sugar (2 kg),1.86,2.81,2026-08-01,51.1
+Ontario,Canola oil (3 L),7.11,10.17,2026-08-01,43.0
+Ontario,Apples (kg),4.54,6.35,2026-08-01,39.9
+Ontario,Milk (4 L),4.98,6.87,2026-08-01,38.0
+Ontario,Whole chicken (kg),5.14,6.86,2026-08-01,33.5
+Ontario,Eggs (12),3.77,5.0,2026-08-01,32.6
+Ontario,Carrots (1.36 kg),2.94,3.89,2026-08-01,32.3
+Ontario,Butter (454 g),4.4,5.75,2026-08-01,30.7
+Ontario,White bread (675 g),2.55,3.27,2026-08-01,28.2
+Ontario,Pasta (500 g),2.6,3.32,2026-08-01,27.7
+Ontario,Bananas (kg),1.42,1.71,2026-08-01,20.4
+Ontario,Chicken breasts (kg),12.05,13.94,2026-08-01,15.7
+Ontario,White rice (2 kg),8.18,9.29,2026-08-01,13.6
+Ontario,Block cheese (500 g),6.29,6.98,2026-08-01,11.0
+Ontario,Wheat flour (2.5 kg),4.81,5.33,2026-08-01,10.8
+Ontario,Bacon (500 g),6.01,6.33,2026-08-01,5.3
+Ontario,Potatoes (4.54 kg),4.21,4.34,2026-08-01,3.1
+Ontario,Pork loin (kg),9.02,8.83,2026-08-01,-2.1
+Quebec,Coffee (340 g),5.34,9.7,2026-08-01,81.6
+Quebec,Ground beef (kg),9.8,16.77,2026-08-01,71.1
+Quebec,Canola oil (3 L),7.54,12.04,2026-08-01,59.7
+Quebec,Whole chicken (kg),4.68,6.71,2026-08-01,43.4
+Quebec,Pasta (500 g),2.39,3.22,2026-08-01,34.7
+Quebec,Apples (kg),4.72,6.25,2026-08-01,32.4
+Quebec,Chicken breasts (kg),10.58,14.01,2026-08-01,32.4
+Quebec,Butter (454 g),4.16,5.46,2026-08-01,31.3
+Quebec,Bacon (500 g),5.99,7.68,2026-08-01,28.2
+Quebec,White rice (2 kg),8.82,11.01,2026-08-01,24.8
+Quebec,Milk (4 L),6.96,8.52,2026-08-01,22.4
+Quebec,Block cheese (500 g),5.86,6.88,2026-08-01,17.4
+Quebec,White bread (675 g),3.4,3.97,2026-08-01,16.8
+Quebec,Eggs (12),3.59,4.16,2026-08-01,15.9
+Quebec,Bananas (kg),1.75,2.0,2026-08-01,14.3
+Quebec,Carrots (1.36 kg),2.93,3.27,2026-08-01,11.6
+Quebec,Wheat flour (2.5 kg),4.77,5.18,2026-08-01,8.6
+Quebec,White sugar (2 kg),2.44,2.52,2026-08-01,3.3
+Quebec,Potatoes (4.54 kg),4.31,4.28,2026-08-01,-0.7
+Quebec,Pork loin (kg),10.45,9.16,2026-08-01,-12.3
+Saskatchewan,Ground beef (kg),9.09,17.38,2026-08-01,91.2
+Saskatchewan,Whole chicken (kg),5.46,9.83,2026-08-01,80.0
+Saskatchewan,Coffee (340 g),4.8,8.6,2026-08-01,79.2
+Saskatchewan,Canola oil (3 L),6.03,10.44,2026-08-01,73.1
+Saskatchewan,Pasta (500 g),2.45,3.49,2026-08-01,42.4
+Saskatchewan,Apples (kg),4.89,6.71,2026-08-01,37.2
+Saskatchewan,Potatoes (4.54 kg),5.74,7.62,2026-08-01,32.8
+Saskatchewan,Milk (4 L),4.93,6.49,2026-08-01,31.6
+Saskatchewan,White bread (675 g),2.81,3.62,2026-08-01,28.8
+Saskatchewan,Eggs (12),3.75,4.8,2026-08-01,28.0
+Saskatchewan,Butter (454 g),4.61,5.67,2026-08-01,23.0
+Saskatchewan,Bananas (kg),1.72,2.05,2026-08-01,19.2
+Saskatchewan,Carrots (1.36 kg),4.02,4.77,2026-08-01,18.7
+Saskatchewan,Block cheese (500 g),6.13,7.14,2026-08-01,16.5
+Saskatchewan,Wheat flour (2.5 kg),4.56,5.29,2026-08-01,16.0
+Saskatchewan,Pork loin (kg),8.08,9.15,2026-08-01,13.2
+Saskatchewan,Chicken breasts (kg),13.34,14.95,2026-08-01,12.1
+Saskatchewan,Bacon (500 g),5.56,6.2,2026-08-01,11.5
+Saskatchewan,White rice (2 kg),7.82,8.71,2026-08-01,11.4
+Saskatchewan,White sugar (2 kg),2.83,3.0,2026-08-01,6.0

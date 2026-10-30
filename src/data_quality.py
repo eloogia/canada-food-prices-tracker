@@ -152,8 +152,8 @@ def main() -> None:
     for a, b in pairs:
         gap = ((w[a] - w[b]).abs() / w[b] * 100)
         add(f"| {a} vs {b} | {gap.median():.2f} | {(gap <= 1).mean() * 100:.0f}% |")
-    add("\nNeighbouring provinces served by the same grocery chains (Prairies, Maritimes) track each other much more "
-        "closely than Quebec vs Ontario. The table cannot say why (regional pricing zones are a plausible reason). "
+    add("\nNeighbouring provinces (Prairies, Maritimes) track each other much more "
+        "closely than Quebec vs Ontario. The table cannot say why (shared regional pricing by grocery chains is one plausible reason, not verified here). "
         "Practical consequence: Alberta and Saskatchewan are **not two independent data points**, so agreement "
         "between them is not treated as extra evidence.\n")
 
