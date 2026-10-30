@@ -1,0 +1,405 @@
+REF_DATE,GEO,Products,VALUE,mom_pct
+2022-11,Quebec,"Potatoes, 4.54 kilograms",4.66,116.7
+2023-11,Quebec,"Potatoes, 4.54 kilograms",4.62,90.9
+2020-11,Quebec,"Potatoes, 4.54 kilograms",4.06,90.6
+2026-05,Quebec,"Whole chicken, per kilogram",10.18,73.1
+2021-11,Quebec,"Potatoes, 4.54 kilograms",3.77,72.1
+2022-12,Quebec,"White sugar, 2 kilograms",2.82,69.9
+2025-09,Quebec,"Whole chicken, per kilogram",8.86,67.2
+2021-04,Quebec,"Whole chicken, per kilogram",7.55,66.3
+2019-12,Quebec,"Whole chicken, per kilogram",6.68,60.6
+2026-05,Saskatchewan,"Whole chicken, per kilogram",8.99,60.0
+2024-12,Quebec,"Whole chicken, per kilogram",8.45,59.1
+2019-11,Quebec,"Potatoes, 4.54 kilograms",3.94,57.6
+2025-12,Ontario,"Whole chicken, per kilogram",9.27,53.7
+2026-05,Alberta,"Whole chicken, per kilogram",9.44,53.7
+2026-07,Quebec,"Whole chicken, per kilogram",8.93,52.9
+2024-11,Quebec,"Potatoes, 4.54 kilograms",4.44,52.1
+2024-07,Ontario,"White rice, 2 kilograms",7.25,51.4
+2026-02,Quebec,"Whole chicken, per kilogram",9.11,50.6
+2017-06,Quebec,"Whole chicken, per kilogram",6.31,50.2
+2024-08,Quebec,"Whole chicken, per kilogram",8.51,49.3
+2019-03,Ontario,"White sugar, 2 kilograms",2.05,48.6
+2024-03,Quebec,"Whole chicken, per kilogram",7.96,48.5
+2023-07,Quebec,"Whole chicken, per kilogram",7.32,48.2
+2022-12,Quebec,"Pork loin cuts, per kilogram",11.23,48.0
+2020-03,Ontario,"White sugar, 2 kilograms",2.04,47.8
+2021-04,Quebec,"Potatoes, 4.54 kilograms",5.39,47.3
+2022-10,Quebec,"Potatoes, 4.54 kilograms",2.15,-44.6
+2025-10,Ontario,"Whole chicken, per kilogram",8.67,44.5
+2018-11,Quebec,"White sugar, 2 kilograms",2.16,43.0
+2023-10,Quebec,"Whole chicken, per kilogram",7.14,42.8
+2026-06,Quebec,"Whole chicken, per kilogram",5.84,-42.6
+2022-05,Quebec,"Potatoes, 4.54 kilograms",5.21,42.3
+2026-01,Quebec,"Carrots, 1.36 kilograms",2.94,41.3
+2023-10,Quebec,"Potatoes, 4.54 kilograms",2.42,-40.7
+2017-04,Saskatchewan,"Pork loin cuts, per kilogram",10.37,40.7
+2022-12,Quebec,"Carrots, 1.36 kilograms",2.93,40.2
+2021-10,Quebec,"Potatoes, 4.54 kilograms",2.19,-39.2
+2018-07,Quebec,"Whole chicken, per kilogram",6.49,38.7
+2025-01,Quebec,"Whole chicken, per kilogram",5.2,-38.5
+2017-02,Alberta,"White sugar, 2 kilograms",3.03,38.4
+2020-05,Quebec,"Whole chicken, per kilogram",5.56,38.0
+2022-11,Quebec,"White sugar, 2 kilograms",1.66,-37.8
+2018-10,Quebec,"White sugar, 2 kilograms",1.51,-37.6
+2017-04,Alberta,"Pork loin cuts, per kilogram",11.25,37.4
+2019-07,Quebec,"Whole chicken, per kilogram",6.8,37.1
+2020-09,Quebec,"Whole chicken, per kilogram",4.18,-37.1
+2023-09,Quebec,"Whole chicken, per kilogram",5.0,-36.5
+2017-07,Quebec,"White sugar, 2 kilograms",3.11,36.4
+2018-03,Ontario,"Pork loin cuts, per kilogram",8.43,36.4
+2021-04,Ontario,"Butter, 454 grams",5.23,36.2
+2022-11,Canada,"Potatoes, 4.54 kilograms",4.99,35.2
+2020-10,Alberta,"Whole chicken, per kilogram",7.59,35.1
+2022-05,Quebec,"Butter, 454 grams",6.02,35.0
+2026-04,Quebec,"Carrots, 1.36 kilograms",4.1,34.9
+2021-08,Quebec,"Carrots, 1.36 kilograms",2.54,-34.7
+2017-11,Quebec,"Potatoes, 4.54 kilograms",4.15,34.7
+2021-05,Quebec,"Whole chicken, per kilogram",4.94,-34.6
+2026-01,Quebec,"Canola oil, 3 litres",11.0,34.5
+2017-11,Quebec,"Whole chicken, per kilogram",4.45,-34.2
+2020-03,Canada,"White sugar, 2 kilograms",2.28,34.1
+2024-04,Quebec,"Whole chicken, per kilogram",5.26,-33.9
+2024-09,Quebec,"Whole chicken, per kilogram",5.65,-33.6
+2017-05,Quebec,"Whole chicken, per kilogram",4.2,-33.2
+2019-12,Quebec,"Carrots, 1.36 kilograms",2.82,33.0
+2019-03,Canada,"White sugar, 2 kilograms",2.26,32.9
+2018-03,Quebec,"Whole chicken, per kilogram",6.31,32.8
+2019-01,Ontario,"Potatoes, 4.54 kilograms",4.75,32.7
+2018-01,Quebec,"Whole chicken, per kilogram",6.5,32.4
+2024-08,Alberta,"White sugar, 2 kilograms",3.35,32.4
+2018-09,Quebec,"Potatoes, 4.54 kilograms",3.18,-32.3
+2025-02,Quebec,"Pork loin cuts, per kilogram",11.44,32.1
+2019-02,Alberta,"Pork loin cuts, per kilogram",10.84,31.9
+2024-08,Saskatchewan,"White sugar, 2 kilograms",3.31,31.9
+2021-07,Quebec,"Whole chicken, per kilogram",5.94,31.7
+2024-03,Ontario,"Potatoes, 4.54 kilograms",4.83,31.6
+2018-07,Ontario,"Pork loin cuts, per kilogram",8.25,31.6
+2020-12,Ontario,"Whole chicken, per kilogram",6.99,31.6
+2022-11,Quebec,"Whole chicken, per kilogram",6.47,31.5
+2026-05,Canada,"Whole chicken, per kilogram",8.52,31.3
+2022-02,Ontario,"Canola oil, 3 litres",11.32,31.2
+2020-01,Ontario,"Potatoes, 4.54 kilograms",4.59,31.1
+2025-09,Ontario,"Apples, per kilogram",4.41,-31.1
+2021-10,Ontario,"White sugar, 2 kilograms",2.2,31.0
+2017-03,Quebec,"Whole chicken, per kilogram",6.29,31.0
+2021-07,Ontario,"Whole chicken, per kilogram",6.79,30.8
+2025-01,Quebec,"Carrots, 1.36 kilograms",3.19,30.7
+2017-02,Quebec,"Roasted or ground coffee, 340 grams",5.11,30.7
+2025-04,Ontario,"Pork loin cuts, per kilogram",10.38,30.4
+2024-06,Ontario,"White rice, 2 kilograms",4.79,-30.4
+2023-11,Quebec,"Whole chicken, per kilogram",4.97,-30.4
+2025-11,Ontario,"Whole chicken, per kilogram",6.03,-30.4
+2023-04,Ontario,"Pork loin cuts, per kilogram",9.24,30.3
+2025-05,Quebec,"Potatoes, 4.54 kilograms",4.77,30.3
+2024-10,Ontario,"Whole chicken, per kilogram",7.23,30.3
+2020-03,Quebec,"Potatoes, 4.54 kilograms",4.78,30.2
+2018-12,Ontario,"Whole chicken, per kilogram",6.76,30.0
+2020-10,Quebec,"Whole chicken, per kilogram",5.43,29.9
+2020-02,Ontario,"White sugar, 2 kilograms",1.38,-29.9
+2022-11,Quebec,"Pork loin cuts, per kilogram",7.59,-29.9
+2021-04,Ontario,"White sugar, 2 kilograms",2.14,29.7
+2020-05,Saskatchewan,"Pork loin cuts, per kilogram",10.22,29.7
+2021-04,Saskatchewan,"White sugar, 2 kilograms",2.88,29.7
+2023-01,Quebec,"Potatoes, 4.54 kilograms",4.9,29.6
+2021-01,Quebec,"Potatoes, 4.54 kilograms",4.31,29.4
+2021-04,Quebec,"Butter, 454 grams",5.07,29.3
+2021-04,Ontario,"Pork loin cuts, per kilogram",8.82,29.3
+2025-10,Quebec,"Whole chicken, per kilogram",6.27,-29.2
+2025-12,Alberta,"Whole chicken, per kilogram",9.67,29.1
+2020-12,Alberta,"White sugar, 2 kilograms",2.76,29.0
+2017-09,Quebec,"Potatoes, 4.54 kilograms",3.06,-29.0
+2017-07,Saskatchewan,"Pork loin cuts, per kilogram",7.38,-28.9
+2023-03,Quebec,"Carrots, 1.36 kilograms",3.53,28.8
+2017-06,Ontario,"Pork loin cuts, per kilogram",6.12,-28.8
+2020-04,Quebec,"Carrots, 1.36 kilograms",4.02,28.8
+2024-02,Ontario,"Potatoes, 4.54 kilograms",3.67,-28.7
+2017-07,Alberta,"Pork loin cuts, per kilogram",8.55,-28.7
+2024-04,Saskatchewan,"Wheat flour, 2.5 kilograms",4.86,28.6
+2018-04,Ontario,"Canola oil, 3 litres",5.85,-28.5
+2018-12,Alberta,"Whole chicken, per kilogram",7.41,28.4
+2020-09,Quebec,"Potatoes, 4.54 kilograms",2.92,-28.4
+2017-04,Alberta,"Chicken breasts, per kilogram",14.73,28.2
+2018-11,Quebec,"Potatoes, 4.54 kilograms",3.64,28.2
+2022-01,Quebec,"Potatoes, 4.54 kilograms",4.61,28.1
+2019-08,Ontario,"Pork loin cuts, per kilogram",9.29,28.0
+2019-04,Ontario,"Butter, 454 grams",3.37,-28.0
+2023-11,Canada,"Potatoes, 4.54 kilograms",5.03,28.0
+2024-09,Saskatchewan,"Apples, per kilogram",4.29,-27.9
+2023-09,Quebec,"Potatoes, 4.54 kilograms",4.08,-27.8
+2023-09,Quebec,"Apples, per kilogram",4.59,-27.7
+2019-09,Quebec,"White sugar, 2 kilograms",2.59,27.6
+2019-09,Quebec,"Whole chicken, per kilogram",4.35,-27.5
+2019-02,Quebec,"Bacon, 500 grams",5.07,-27.4
+2019-08,Quebec,"Carrots, 1.36 kilograms",2.81,-27.4
+2023-09,Saskatchewan,"Apples, per kilogram",4.37,-27.3
+2024-04,Quebec,"Potatoes, 4.54 kilograms",5.7,27.2
+2019-05,Ontario,"Potatoes, 4.54 kilograms",4.81,27.2
+2020-10,Quebec,"Potatoes, 4.54 kilograms",2.13,-27.1
+2021-09,Saskatchewan,"Apples, per kilogram",3.93,-27.1
+2019-02,Ontario,"White sugar, 2 kilograms",1.38,-27.0
+2018-02,Quebec,"Whole chicken, per kilogram",4.75,-26.9
+2024-03,Alberta,"Wheat flour, 2.5 kilograms",4.21,-26.8
+2017-10,Quebec,"Whole chicken, per kilogram",6.76,26.8
+2026-04,Quebec,"Whole chicken, per kilogram",5.88,-26.8
+2018-09,Saskatchewan,"Apples, per kilogram",3.21,-26.7
+2019-01,Quebec,"Bacon, 500 grams",6.98,26.7
+2020-06,Quebec,"Chicken breasts, per kilogram",13.38,26.7
+2018-12,Saskatchewan,"Apples, per kilogram",4.67,26.6
+2023-09,Ontario,"Apples, per kilogram",4.27,-26.6
+2020-03,Alberta,"Whole chicken, per kilogram",7.47,26.6
+2020-12,Canada,"Whole chicken, per kilogram",6.54,26.5
+2021-01,Ontario,"Whole chicken, per kilogram",5.14,-26.5
+2022-10,Saskatchewan,"Whole chicken, per kilogram",7.92,26.5
+2022-09,Quebec,"Butter, 454 grams",4.47,-26.5
+2017-08,Saskatchewan,"Pork loin cuts, per kilogram",9.33,26.4
+2021-04,Alberta,"White sugar, 2 kilograms",2.78,26.4
+2024-03,Saskatchewan,"Wheat flour, 2.5 kilograms",3.78,-26.3
+2017-12,Quebec,"White sugar, 2 kilograms",2.5,26.3
+2019-09,Quebec,"Potatoes, 4.54 kilograms",3.28,-26.1
+2017-06,Quebec,"White sugar, 2 kilograms",2.28,-26.0
+2025-12,Saskatchewan,"Carrots, 1.36 kilograms",4.36,26.0
+2025-12,Saskatchewan,"Whole chicken, per kilogram",9.1,26.0
+2023-09,Canada,"Apples, per kilogram",4.5,-26.0
+2020-10,Ontario,"Pork loin cuts, per kilogram",6.8,-26.0
+2024-11,Canada,"Potatoes, 4.54 kilograms",5.05,25.9
+2018-07,Alberta,"Whole chicken, per kilogram",6.87,25.8
+2021-12,Ontario,"Apples, per kilogram",5.26,25.8
+2020-06,Quebec,"Pork loin cuts, per kilogram",7.99,-25.7
+2024-12,Quebec,"Carrots, 1.36 kilograms",2.44,-25.6
+2025-05,Ontario,"Pork loin cuts, per kilogram",7.72,-25.6
+2023-04,Ontario,"Butter, 454 grams",6.47,25.6
+2023-09,Alberta,"Apples, per kilogram",4.62,-25.6
+2021-09,Alberta,"Apples, per kilogram",4.1,-25.6
+2022-09,Ontario,"Apples, per kilogram",4.47,-25.6
+2021-11,Quebec,"Chicken breasts, per kilogram",13.66,25.6
+2017-09,Quebec,"White sugar, 2 kilograms",2.34,-25.5
+2023-12,Quebec,"Apples, per kilogram",6.1,25.5
+2018-11,Saskatchewan,"Apples, per kilogram",3.69,25.5
+2024-09,Alberta,"Apples, per kilogram",4.49,-25.3
+2022-02,Quebec,"Canola oil, 3 litres",12.82,25.3
+2021-07,Canada,"Whole chicken, per kilogram",6.43,25.3
+2019-04,Alberta,"Whole chicken, per kilogram",7.16,25.2
+2026-08,Quebec,"Carrots, 1.36 kilograms",3.27,-25.2
+2024-09,Ontario,"Apples, per kilogram",4.1,-25.2
+2024-06,Ontario,"Canola oil, 3 litres",9.09,-25.2
+2026-04,Ontario,"Whole chicken, per kilogram",6.53,-25.2
+2020-08,Quebec,"White sugar, 2 kilograms",1.69,-25.2
+2022-11,Quebec,"Carrots, 1.36 kilograms",2.09,-25.1
+2025-09,Quebec,"Potatoes, 4.54 kilograms",3.41,-25.1
+2020-02,Canada,"White sugar, 2 kilograms",1.7,-25.1
+2025-10,Quebec,"Carrots, 1.36 kilograms",2.29,-24.9
+2022-02,Quebec,"White sugar, 2 kilograms",2.61,24.9
+2023-11,Saskatchewan,"Apples, per kilogram",5.66,24.9
+2019-01,Quebec,"Potatoes, 4.54 kilograms",5.31,24.9
+2026-08,Quebec,"Whole chicken, per kilogram",6.71,-24.9
+2025-06,Ontario,"Whole chicken, per kilogram",6.94,24.8
+2022-06,Quebec,"Chicken breasts, per kilogram",17.77,24.8
+2020-07,Saskatchewan,"Pork loin cuts, per kilogram",8.1,-24.8
+2018-12,Saskatchewan,"Pork loin cuts, per kilogram",9.12,24.8
+2024-05,Saskatchewan,"White rice, 2 kilograms",7.28,-24.7
+2024-12,Quebec,"White sugar, 2 kilograms",3.13,24.7
+2018-12,Alberta,"Pork loin cuts, per kilogram",10.5,24.7
+2020-08,Quebec,"Carrots, 1.36 kilograms",2.96,-24.7
+2017-07,Ontario,"Pork loin cuts, per kilogram",7.63,24.7
+2023-09,Ontario,"Potatoes, 4.54 kilograms",3.81,-24.6
+2019-08,Saskatchewan,"Pork loin cuts, per kilogram",9.57,24.6
+2018-12,Saskatchewan,"Whole chicken, per kilogram",6.85,24.5
+2023-04,Quebec,"Ground beef, per kilogram",12.61,24.5
+2021-04,Canada,"White sugar, 2 kilograms",2.34,24.5
+2022-06,Quebec,"Potatoes, 4.54 kilograms",3.94,-24.4
+2018-09,Ontario,"Carrots, 1.36 kilograms",2.17,-24.4
+2026-03,Ontario,"White sugar, 2 kilograms",2.49,-24.3
+2021-02,Quebec,"Butter, 454 grams",5.17,24.3
+2021-09,Ontario,"White sugar, 2 kilograms",1.68,-24.3
+2021-03,Quebec,"Butter, 454 grams",3.92,-24.2
+2024-10,Quebec,"Potatoes, 4.54 kilograms",2.92,-24.2
+2020-03,Saskatchewan,"Whole chicken, per kilogram",6.86,24.1
+2024-05,Quebec,"Apples, per kilogram",6.02,24.1
+2025-09,Canada,"Apples, per kilogram",4.68,-24.1
+2018-12,Alberta,"Apples, per kilogram",4.64,24.1
+2024-01,Quebec,"Carrots, 1.36 kilograms",3.19,24.1
+2022-08,Quebec,"Carrots, 1.36 kilograms",3.49,-24.1
+2022-02,Quebec,"Potatoes, 4.54 kilograms",3.5,-24.1
+2021-04,Canada,"Butter, 454 grams",5.07,24.0
+2022-10,Quebec,"Butter, 454 grams",5.54,23.9
+2022-11,Saskatchewan,"Apples, per kilogram",5.18,23.9
+2023-11,Alberta,"Apples, per kilogram",5.71,23.9
+2019-10,Quebec,"Potatoes, 4.54 kilograms",2.5,-23.8
+2026-08,Saskatchewan,"Whole chicken, per kilogram",9.83,23.8
+2018-09,Ontario,"Pork loin cuts, per kilogram",8.12,23.8
+2017-02,Quebec,"Whole chicken, per kilogram",4.8,-23.7
+2026-07,Ontario,"Whole chicken, per kilogram",6.88,-23.7
+2020-07,Quebec,"Whole chicken, per kilogram",7.3,23.7
+2022-06,Quebec,"White sugar, 2 kilograms",2.19,-23.7
+2020-12,Saskatchewan,"White sugar, 2 kilograms",2.72,23.6
+2022-12,Canada,"White sugar, 2 kilograms",2.83,23.6
+2018-08,Saskatchewan,"Pork loin cuts, per kilogram",8.89,23.6
+2023-09,Saskatchewan,"White rice, 2 kilograms",10.83,23.6
+2024-10,Quebec,"Carrots, 1.36 kilograms",2.66,-23.6
+2019-07,Saskatchewan,"Pork loin cuts, per kilogram",7.68,-23.5
+2024-04,Ontario,"Wheat flour, 2.5 kilograms",5.09,23.5
+2023-10,Quebec,"Bacon, 500 grams",6.18,-23.5
+2018-09,Ontario,"Potatoes, 4.54 kilograms",3.38,-23.5
+2018-06,Quebec,"Potatoes, 4.54 kilograms",5.04,23.5
+2019-05,Quebec,"Potatoes, 4.54 kilograms",5.07,23.4
+2024-09,Alberta,"Whole chicken, per kilogram",8.27,23.4
+2024-11,Quebec,"Carrots, 1.36 kilograms",3.28,23.3
+2018-09,Alberta,"Apples, per kilogram",3.39,-23.3
+2023-06,Saskatchewan,"Pork loin cuts, per kilogram",9.52,23.2
+2023-04,Saskatchewan,"Pork loin cuts, per kilogram",9.51,23.2
+2017-02,Saskatchewan,"White sugar, 2 kilograms",3.15,23.0
+2024-02,Quebec,"Pork loin cuts, per kilogram",10.0,23.0
+2021-11,Canada,"Potatoes, 4.54 kilograms",4.22,23.0
+2020-12,Alberta,"Whole chicken, per kilogram",7.54,23.0
+2019-09,Saskatchewan,"Apples, per kilogram",3.73,-22.9
+2017-02,Saskatchewan,"Pork loin cuts, per kilogram",9.23,22.9
+2026-02,Quebec,"White sugar, 2 kilograms",2.47,-22.8
+2023-02,Quebec,"Apples, per kilogram",6.19,22.8
+2018-08,Alberta,"Pork loin cuts, per kilogram",9.71,22.8
+2018-06,Ontario,"Potatoes, 4.54 kilograms",4.42,22.8
+2017-02,Quebec,"Ground beef, per kilogram",11.2,22.7
+2024-04,Quebec,"Wheat flour, 2.5 kilograms",5.29,22.7
+2024-04,Ontario,"White sugar, 2 kilograms",3.19,22.7
+2017-12,Quebec,"Potatoes, 4.54 kilograms",3.21,-22.7
+2022-02,Quebec,"Eggs, 1 dozen",3.8,22.6
+2026-03,Saskatchewan,"Whole chicken, per kilogram",6.87,-22.6
+2023-04,Alberta,"Pork loin cuts, per kilogram",10.47,22.6
+2018-04,Saskatchewan,"Whole chicken, per kilogram",6.56,22.6
+2024-09,Canada,"Apples, per kilogram",4.36,-22.6
+2024-04,Canada,"Wheat flour, 2.5 kilograms",5.12,22.5
+2025-12,Quebec,"Canola oil, 3 litres",8.18,-22.5
+2018-01,Quebec,"Pork loin cuts, per kilogram",6.59,-22.5
+2019-08,Alberta,"Pork loin cuts, per kilogram",10.6,22.5
+2021-03,Saskatchewan,"White sugar, 2 kilograms",2.22,-22.4
+2020-11,Canada,"Potatoes, 4.54 kilograms",4.15,22.4
+2023-05,Alberta,"White sugar, 2 kilograms",3.28,22.4
+2017-11,Quebec,"White sugar, 2 kilograms",1.98,-22.4
+2019-09,Quebec,"Carrots, 1.36 kilograms",3.44,22.4
+2017-06,Alberta,"Pork loin cuts, per kilogram",12.0,22.3
+2024-05,Ontario,"White rice, 2 kilograms",6.88,-22.3
+2021-04,Canada,"Potatoes, 4.54 kilograms",5.1,22.3
+2021-03,Ontario,"Butter, 454 grams",3.84,-22.3
+2019-11,Quebec,"Carrots, 1.36 kilograms",2.12,-22.3
+2018-10,Quebec,"Whole chicken, per kilogram",5.16,-22.2
+2024-12,Quebec,"Apples, per kilogram",5.5,22.2
+2019-04,Saskatchewan,"Pork loin cuts, per kilogram",9.46,22.2
+2024-01,Quebec,"Ground beef, per kilogram",10.85,-22.2
+2026-04,Quebec,"White sugar, 2 kilograms",3.04,22.1
+2022-02,Canada,"Canola oil, 3 litres",11.1,22.1
+2019-08,Quebec,"Butter, 454 grams",4.58,22.1
+2024-02,Canada,"Potatoes, 4.54 kilograms",4.34,-22.1
+2024-05,Alberta,"White rice, 2 kilograms",7.69,-22.1
+2018-08,Quebec,"Carrots, 1.36 kilograms",2.92,-22.1
+2017-06,Alberta,"Whole chicken, per kilogram",6.7,22.0
+2019-01,Quebec,"Butter, 454 grams",4.61,22.0
+2019-02,Canada,"White sugar, 2 kilograms",1.7,-22.0
+2022-04,Quebec,"Butter, 454 grams",4.46,-22.0
+2020-12,Saskatchewan,"Whole chicken, per kilogram",6.88,22.0
+2020-12,Ontario,"Butter, 454 grams",4.9,21.9
+2020-08,Alberta,"Butter, 454 grams",4.74,21.9
+2021-11,Saskatchewan,"Apples, per kilogram",4.62,21.9
+2018-09,Canada,"Potatoes, 4.54 kilograms",3.79,-21.9
+2025-05,Ontario,"Potatoes, 4.54 kilograms",5.46,21.9
+2026-03,Alberta,"White sugar, 2 kilograms",2.64,-21.9
+2023-01,Ontario,"Potatoes, 4.54 kilograms",4.85,21.9
+2024-06,Canada,"Canola oil, 3 litres",8.88,-21.9
+2023-09,Quebec,"Pork loin cuts, per kilogram",9.99,21.8
+2019-09,Alberta,"Apples, per kilogram",3.87,-21.8
+2024-08,Canada,"White sugar, 2 kilograms",3.18,21.8
+2022-09,Quebec,"Ground beef, per kilogram",12.56,21.8
+2020-12,Quebec,"Ground beef, per kilogram",10.94,21.8
+2021-09,Ontario,"Apples, per kilogram",3.99,-21.8
+2022-11,Alberta,"Apples, per kilogram",5.31,21.8
+2019-01,Alberta,"Pork loin cuts, per kilogram",8.22,-21.7
+2025-05,Canada,"Potatoes, 4.54 kilograms",5.73,21.7
+2018-11,Quebec,"Chicken breasts, per kilogram",14.01,21.7
+2024-06,Quebec,"Canola oil, 3 litres",9.26,-21.7
+2022-09,Ontario,"Whole chicken, per kilogram",7.39,21.7
+2020-07,Quebec,"Dry or fresh pasta, 500 grams",2.28,-21.6
+2022-10,Quebec,"Apples, per kilogram",4.15,-21.6
+2021-11,Alberta,"Apples, per kilogram",4.61,21.6
+2019-08,Ontario,"Potatoes, 4.54 kilograms",4.15,-21.6
+2024-04,Ontario,"Carrots, 1.36 kilograms",4.05,21.6
+2021-12,Quebec,"Apples, per kilogram",5.44,21.4
+2020-07,Alberta,"Pork loin cuts, per kilogram",9.36,-21.4
+2018-04,Quebec,"White sugar, 2 kilograms",2.84,21.4
+2024-08,Quebec,"White sugar, 2 kilograms",3.18,21.4
+2024-07,Canada,"White rice, 2 kilograms",7.84,21.4
+2023-03,Quebec,"White sugar, 2 kilograms",2.46,-21.4
+2020-08,Ontario,"Carrots, 1.36 kilograms",2.66,-21.3
+2017-09,Saskatchewan,"Apples, per kilogram",3.47,-21.3
+2021-09,Canada,"Apples, per kilogram",4.21,-21.3
+2021-12,Canada,"Apples, per kilogram",5.35,21.3
+2023-09,Ontario,"White sugar, 2 kilograms",2.26,-21.3
+2023-09,Canada,"Potatoes, 4.54 kilograms",4.62,-21.3
+2026-03,Saskatchewan,"White sugar, 2 kilograms",2.63,-21.3
+2017-07,Canada,"White sugar, 2 kilograms",2.45,21.3
+2026-04,Canada,"Whole chicken, per kilogram",6.49,-21.2
+2022-11,Quebec,"Apples, per kilogram",5.03,21.2
+2020-10,Quebec,"White sugar, 2 kilograms",2.34,21.2
+2017-07,Quebec,"Ground beef, per kilogram",11.78,21.1
+2017-06,Canada,"White sugar, 2 kilograms",2.02,-21.1
+2021-03,Alberta,"White sugar, 2 kilograms",2.2,-21.1
+2018-06,Quebec,"Eggs, 1 dozen",3.38,21.1
+2022-02,Alberta,"Canola oil, 3 litres",10.26,21.1
+2026-08,Saskatchewan,"White sugar, 2 kilograms",3.0,21.0
+2019-01,Canada,"Potatoes, 4.54 kilograms",5.07,21.0
+2020-11,Alberta,"White sugar, 2 kilograms",2.14,-21.0
+2024-11,Ontario,"Potatoes, 4.54 kilograms",4.57,20.9
+2019-02,Quebec,"Potatoes, 4.54 kilograms",4.2,-20.9
+2022-04,Quebec,"Eggs, 1 dozen",3.1,-20.9
+2023-04,Canada,"Pork loin cuts, per kilogram",9.57,20.8
+2024-09,Quebec,"Potatoes, 4.54 kilograms",3.85,-20.8
+2018-06,Ontario,"Pork loin cuts, per kilogram",6.27,-20.8
+2023-02,Saskatchewan,"Pork loin cuts, per kilogram",7.32,-20.8
+2023-10,Quebec,"Chicken breasts, per kilogram",12.59,-20.8
+2024-07,Saskatchewan,"White sugar, 2 kilograms",2.51,-20.8
+2026-01,Quebec,"White sugar, 2 kilograms",3.2,20.8
+2022-12,Quebec,"Eggs, 1 dozen",3.36,-20.8
+2022-01,Quebec,"White sugar, 2 kilograms",2.09,-20.8
+2025-09,Ontario,"Whole chicken, per kilogram",6.0,-20.8
+2020-11,Ontario,"Dry or fresh pasta, 500 grams",2.56,20.8
+2022-09,Quebec,"Potatoes, 4.54 kilograms",3.88,-20.8
+2021-01,Quebec,"White sugar, 2 kilograms",2.44,20.8
+2021-12,Ontario,"Whole chicken, per kilogram",7.3,20.7
+2021-05,Saskatchewan,"Canola oil, 3 litres",7.51,20.7
+2019-03,Quebec,"Dry or fresh pasta, 500 grams",2.57,20.7
+2019-11,Quebec,"Apples, per kilogram",4.6,20.7
+2024-02,Quebec,"Potatoes, 4.54 kilograms",3.99,-20.7
+2022-04,Ontario,"Butter, 454 grams",5.66,20.7
+2021-05,Alberta,"Canola oil, 3 litres",7.81,20.7
+2021-01,Saskatchewan,"Whole chicken, per kilogram",5.46,-20.6
+2021-01,Canada,"Whole chicken, per kilogram",5.19,-20.6
+2018-10,Alberta,"Whole chicken, per kilogram",5.69,-20.6
+2025-03,Alberta,"White sugar, 2 kilograms",2.82,-20.6
+2022-09,Canada,"Apples, per kilogram",4.77,-20.6
+2022-05,Canada,"Potatoes, 4.54 kilograms",5.26,20.6
+2023-03,Ontario,"Butter, 454 grams",5.15,-20.6
+2019-10,Quebec,"Carrots, 1.36 kilograms",2.73,-20.6
+2023-06,Alberta,"Pork loin cuts, per kilogram",10.31,20.6
+2019-05,Ontario,"Butter, 454 grams",4.06,20.5
+2022-01,Saskatchewan,"White sugar, 2 kilograms",2.94,20.5
+2021-07,Ontario,"Pork loin cuts, per kilogram",10.11,20.5
+2023-02,Ontario,"Pork loin cuts, per kilogram",7.59,-20.5
+2018-08,Ontario,"Pork loin cuts, per kilogram",6.56,-20.5
+2025-09,Saskatchewan,"Apples, per kilogram",4.88,-20.4
+2024-01,Quebec,"Apples, per kilogram",4.86,-20.3
+2017-12,Ontario,"Carrots, 1.36 kilograms",2.19,20.3
+2020-12,Quebec,"Chicken breasts, per kilogram",11.06,-20.3
+2023-05,Saskatchewan,"White rice, 2 kilograms",10.5,20.3
+2026-08,Alberta,"White sugar, 2 kilograms",3.03,20.2
+2021-03,Quebec,"Bacon, 500 grams",6.43,20.2
+2017-03,Saskatchewan,"Pork loin cuts, per kilogram",7.37,-20.2
+2017-06,Quebec,"Roasted or ground coffee, 340 grams",5.35,20.2
+2022-10,Quebec,"Pork loin cuts, per kilogram",10.83,20.2
+2017-02,Alberta,"Pork loin cuts, per kilogram",9.88,20.2
+2019-07,Alberta,"Pork loin cuts, per kilogram",8.65,-20.2
+2025-03,Ontario,"White sugar, 2 kilograms",2.73,-20.2
+2019-02,Saskatchewan,"Pork loin cuts, per kilogram",9.08,20.1
+2025-03,Saskatchewan,"White sugar, 2 kilograms",2.82,-20.1
+2017-09,Saskatchewan,"Pork loin cuts, per kilogram",7.46,-20.0
+2024-05,Canada,"White rice, 2 kilograms",7.67,-20.0
+2018-02,Ontario,"Canola oil, 3 litres",7.19,20.0
+2024-09,Ontario,"Pork loin cuts, per kilogram",9.71,20.0
+2026-07,Saskatchewan,"White sugar, 2 kilograms",2.48,-20.0
